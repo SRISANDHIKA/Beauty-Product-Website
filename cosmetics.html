@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cosmetics Collection - Quill Beauty</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="./Screenshot 2025-07-12 220428.png" alt="Quill Beauty Logo">
+            </div>
+            
+            <!-- Desktop Menu -->
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li class="dropdown">
+                    <span class="nav-link">Shop ▾</span>
+                    <div class="dropdown-content">
+                        <a href="skincare.html">Skincare</a>
+                        <a href="cosmetics.html">Cosmetics</a>
+                    </div>
+                </li>
+                <li><a href="lookbook.html" class="nav-link">Lookbook</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="faq.html" class="nav-link">FAQ</a></li>
+            </ul>
+            
+            <!-- Desktop Icons -->
+            <div class="nav-icons">
+                <span class="nav-icon">🔍</span>
+                <span class="nav-icon">🛒</span>
+                <span class="nav-icon">👤</span>
+            </div>
+            
+            <!-- Mobile Menu Button -->
+            <div class="mobile-menu-btn">☰</div>
+        </div>
+    </nav>
+
+    <!-- COSMETICS PAGE -->
+    <section class="page">
+        <div class="page-header">
+            <h1>Cosmetics Collection</h1>
+            <p>Enhance your natural beauty with our premium makeup collection</p>
+        </div>
+
+        <!-- Hidden checkboxes for category switching -->
+        <input type="radio" name="cosmetics-category" id="cosmetics-all-toggle" checked>
+        <input type="radio" name="cosmetics-category" id="cosmetics-foundation-toggle">
+        <input type="radio" name="cosmetics-category" id="cosmetics-concealer-toggle">
+        <input type="radio" name="cosmetics-category" id="cosmetics-compact-toggle">
+        <input type="radio" name="cosmetics-category" id="cosmetics-lipstick-toggle">
+        <input type="radio" name="cosmetics-category" id="cosmetics-mascara-toggle">
+        <input type="radio" name="cosmetics-category" id="cosmetics-blush-toggle">
+
+        <div class="category-nav">
+            <div class="category-links">
+                <label for="cosmetics-all-toggle" class="category-link active">All Products</label>
+                <label for="cosmetics-foundation-toggle" class="category-link">Foundation</label>
+                <label for="cosmetics-concealer-toggle" class="category-link">Concealer</label>
+                <label for="cosmetics-compact-toggle" class="category-link">Compact</label>
+                <label for="cosmetics-lipstick-toggle" class="category-link">Lipstick</label>
+                <label for="cosmetics-mascara-toggle" class="category-link">Mascara</label>
+                <label for="cosmetics-blush-toggle" class="category-link">Blush</label>
+            </div>
+        </div>
+
+        <!-- All Cosmetics Products -->
+        <div id="cosmetics-all" class="products-section category-section">
+            <div class="products-container">
+                <!-- Foundation Products -->
+                <div class="product-card small">
+                    <div class="product-image">
+                        <img src="./products/lakme-foundation1.jpg" alt="Estee Lauder Double Wear">
+                        <div class="product-overlay">
+                            <button class="overlay-btn">🔍</button>
+                            <button class="overlay-btn">🛒</button>
+                            <button class="overlay-btn">❤️</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Lakme'</h3>
+                        <p>24H stay-in-place foundation</p>
+                        <div class="product-price">₹3,599</div>
+                    </div>
+                </div>
+
+                <div class="product-card small">
+                    <div class="product-image">
+                        <img src="./products/mac-studio-fix.jpg" alt="Estee Lauder Double Wear">
+                        <div class="product-overlay">
+                            <button class="overlay-btn">🔍</button>
+                            <button class="overlay-btn">🛒</button>
+                            <button class="overlay-btn">❤️</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>MAC Studio Fix Foundation</h3>
+                        <p>Full coverage matte foundation</p>
+                        <div class="product-price">₹2,599</div>
+                    </div>
+                </div>
+
+                <!-- Concealer Products -->
+                <div class="product-card small">
+                    <div class="product-image">
+                        <img src="./products/mac-concealer.jpg" alt="Estee Lauder Double Wear">
+                        <div class="product-overlay">
+                            <button class="overlay-btn">🔍</button>
+                            <button class="overlay-btn">🛒</button>
+                            <button class="overlay-btn">❤️</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>MAC </h3>
+                        <p>Fix-EVERY-WEAR concealer</p>
+                        <div class="product-price">₹2,199</div>
+                    </div>
+                </div>
+
+                <div class="product-card small">
+                    <div class="product-image">
+                        <img src="./products/maybelline-fix-me.jpg" alt="Estee Lauder Double Wear">
+                        <div class="product-overlay">
+                            <button class="overlay-btn">🔍</button>
+                            <button class="overlay-btn">🛒</button>
+                            <button class="overlay-btn">❤️</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Maybelline Fit Me</h3>
+                        <p>Concealer for all skin tones</p>
+                        <div class="product-price">₹959</div>
+                    </div>
+                </div>
+
+                <!-- Compact Products -->
+                <div class="product-card small">
+                    <div class="product-image">
+                        <img src="./products/lakme-compact-1.jpg" alt="Estee Lauder Double Wear">
+                        <div class="product-overlay">
+                            <button class="overlay-btn">🔍</button>
+                            <button class="overlay-btn">🛒</button>
+                            <button class="overlay-btn">❤️</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Lakme'</h3>
+                        <p>Compact powder foundation</p>
+                        <div class="product-price">₹214</div>
+                    </div>
+                </div>
+
+                <div class="product-card small">
+                    <div class="product-image">
+                        <img src="./products/lakme.jpg" alt="Estee Lauder Double Wear">
+                        <div class="product-overlay">
+                            <button class="overlay-btn">🔍</button>
+                            <button class="overlay-btn">🛒</button>
+                            <button class="overlay-btn">❤️</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Lakme Compact Powder</h3>
+                        <p>Natural finish powder</p>
+                        <div class="product-price">₹899</div>
+                    </div>
+                </div>
+
+                <!-- Lipstick Products -->
+                <div class="product-card small">
+                    <div class="product-image">
+                        <img src="./products/mac-lipstick.jpg" alt="Estee Lauder Double Wear">
+                        <div class="product-overlay">
+                            <button class="overlay-btn">🔍</button>
+                            <button class="overlay-btn">🛒</button>
+                            <button class="overlay-btn">❤️</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>MAC Lipstick</h3>
+                        <p>Rich, creamy formula</p>
+                        <div class="product-price">₹1,599</div>
+                    </div>
+                </div>
+
+                <div class="product-card small">
+                    <div class="product-image">
+                        <img src="./products/ysl-lipstick.jpg" alt="Estee Lauder Double Wear">
+                        <div class="product-overlay">
+                            <button class="overlay-btn">🔍</button>
+                            <button class="overlay-btn">🛒</button>
+                            <button class="overlay-btn">❤️</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>YSL Rouge Volupte</h3>
+                        <p>Luxurious moisturizing lipstick</p>
+                        <div class="product-price">₹3,499</div>
+                    </div>
+                </div>
+
+                <!-- Mascara Products -->
+                <div class="product-card small">
+                    <div class="product-image">
+                        <img src="./products/./mascara-mac.jpg" alt="Estee Lauder Double Wear">
+                        <div class="product-overlay">
+                            <button class="overlay-btn">🔍</button>
+                            <button class="overlay-btn">🛒</button>
+                            <button class="overlay-btn">❤️</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>MAC stack MASCARA</h3>
+                        <p>Volumizing mascara</p>
+                        <div class="product-price">₹3,199</div>
+                    </div>
+                </div>
+
+                <div class="product-card small">
+                    <div class="product-image">
+                        <img src="./products/maybelline-mascara.jpg" alt="Estee Lauder Double Wear">
+                        <div class="product-overlay">
+                            <button class="overlay-btn">🔍</button>
+                            <button class="overlay-btn">🛒</button>
+                            <button class="overlay-btn">❤️</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Maybelline Lash Sensational</h3>
+                        <p>Volumizing mascara</p>
+                        <div class="product-price">₹699</div>
+                    </div>
+                </div>
+
+                <!-- Blush Products -->
+                <div class="product-card small">
+                    <div class="product-image">
+                        <img src="./products/nars-blush.jpg" alt="Estee Lauder Double Wear">
+                        <div class="product-overlay">
+                            <button class="overlay-btn">🔍</button>
+                            <button class="overlay-btn">🛒</button>
+                            <button class="overlay-btn">❤️</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Nars Orgasm Blush</h3>
+                        <p>Iconic peachy pink blush</p>
+                        <div class="product-price">₹2,699</div>
+                    </div>
+                </div>
+
+                <div class="product-card small">
+                    <div class="product-image">
+                        <img src="./products/mac-powder-blush.jpg" alt="Estee Lauder Double Wear">
+                        <div class="product-overlay">
+                            <button class="overlay-btn">🔍</button>
+                            <button class="overlay-btn">🛒</button>
+                            <button class="overlay-btn">❤️</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>MAC Powder Blush</h3>
+                        <p>Natural-looking cheek color</p>
+                        <div class="product-price">₹1,899</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Foundation Category -->
+        <div id="cosmetics-foundation" class="products-section category-section">
+            <div class="products-container">
+                <div class="product-card small">
+                    <div class="product-image">
+                        <img src="./products/nars-foundation-radient.jpg" alt="Estee Lauder Double Wear">
+                        <div class="product-overlay">
+                            <button class="overlay-btn">🔍</button>
+                            <button class="overlay-btn">🛒</button>
+                            <button class="overlay-btn">❤️</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>NARS pure radient</h3>
+                        <p>Pure Radiant Tinted Moisturizer SPF 30</p>
+                        <div class="product-price">₹3,599</div>
+                    </div>
+                </div>
+
+                <div class="product-card small">
+                    <div class="product-image">
+                        <img src="./products/maybelline-fix-me.jpg" alt="Estee Lauder Double Wear">
+                        <div class="product-overlay">
+                            <button class="overlay-btn">🔍</button>
+                            <button class="overlay-btn">🛒</button>
+                            <button class="overlay-btn">❤️</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Maybelline FIT-ME foundation</h3>
+                        <p>FIT ME MATTE + PORELESS LIQUID FOUNDATION</p>
+                        <div class="product-price">₹999</div>
+                    </div>
+                </div>
+
+                <div class="product-card small">
+                    <div class="product-image">
+                        <img src="./products/lakme-foundation1.jpg" alt="Estee Lauder Double Wear">
+                        <div class="product-overlay">
+                            <button class="overlay-btn">🔍</button>
+                            <button class="overlay-btn">🛒</button>
+                            <button class="overlay-btn">❤️</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Lakmē 9 to 5 Primer</h3>
+                        <p> Matte Perfect Cover Foundation Mini </p>
+                        <div class="product-price">₹245</div>
+                    </div>
+                </div>
+
+                <div class="product-card small">
+                    <div class="product-image">
+                        <img src="./products/mac-studio-fix.jpg" alt="Estee Lauder Double Wear">
+                        <div class="product-overlay">
+                            <button class="overlay-btn">🔍</button>
+                            <button class="overlay-btn">🛒</button>
+                            <button class="overlay-btn">❤️</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>MAC Studio Fix Foundation</h3>
+                        <p>Full coverage matte foundation</p>
+                        <div class="product-price">₹2,599</div>
+                    </div>
+                </div>
+
+                <div class="product-card small">
+                    <div class="product-image">
+                        <img src="./products/nars-foundation-radient.jpg" alt="Estee Lauder Double Wear">
+                        <div class="product-overlay">
+                            <button class="overlay-btn">🔍</button>
+                            <button class="overlay-btn">🛒</button>
+                            <button class="overlay-btn">❤️</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Nars Natural Radiant</h3>
+                        <p>Longwear foundation</p>
+                        <div class="product-price">₹3,299</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Concealer Category -->
+        <div id="cosmetics-concealer" class="products-section category-section">
+            <div class="products-container">
+                <div class="product-card small">
+                    <div class="product-image">
+                        <img src="./products/mac-concelear.jpg" alt="Estee Lauder Double Wear">
+                        <div class="product-overlay">
+                            <button class="overlay-btn">🔍</button>
+                            <button class="overlay-btn">🛒</button>
+                            <button class="overlay-btn">❤️</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>MAC -concealer</h3>
+                        <p>Studio Fix 24-Hour Smooth Wear Concealer</p>
+                        <div class="product-price">₹2,199</div>
+                    </div>
+                </div>
+
+                <div class="product-card small">
+                    <div class="product-image">
+                        <img src="./products/maybelline-concealer.jpg" alt="Estee Lauder Double Wear">
+                        <div class="product-overlay">
+                            <button class="overlay-btn">🔍</button>
+                            <button class="overlay-btn">🛒</button>
+                            <button class="overlay-btn">❤️</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Maybelline Fit Me</h3>
+                        <p>Concealer for all skin tones</p>
+                        <div class="product-price">₹599</div>
+                    </div>
+                </div>
+
+                <div class="product-card small">
+                    <div class="product-image">
+                        <img src="./products/nars-concealer.jpg" alt="Estee Lauder Double Wear">
+                        <div class="product-overlay">
+                            <button class="overlay-btn">🔍</button>
+                            <button class="overlay-btn">🛒</button>
+                            <button class="overlay-btn">❤️</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>NARS - Concealer</h3>
+                        <p>Mini Radiant Creamy Concealerr</p>
+                        <div class="product-price">₹2,299</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Compact Category -->
+        <div id="cosmetics-compact" class="products-section category-section">
+            <div class="products-container">
+                <div class="product-card small">
+                    <div class="product-image">
+                        <img src="./products/nars-compact.jpg" alt="Estee Lauder Double Wear">
+                        <div class="product-overlay">
+                            <button class="overlay-btn">🔍</button>
+                            <button class="overlay-btn">🛒</button>
+                            <button class="overlay-btn">❤️</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>NARS/h3>
+                        <p>Compact powder foundation</p>
+                        <div class="product-price">₹799</div>
+                    </div>
+                </div>
+
+                <div class="product-card small">
+                    <div class="product-image">
+                        <img src="./products/lakme-compact.jpg" alt="Estee Lauder Double Wear">
+                        <div class="product-overlay">
+                            <button class="overlay-btn">🔍</button>
+                            <button class="overlay-btn">🛒</button>
+                            <button class="overlay-btn">❤️</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Lakme Compact Powder</h3>
+                        <p>Natural finish powder</p>
+                        <div class="product-price">₹899</div>
+                    </div>
+                </div>
+
+                <div class="product-card small">
+                    <div class="product-image">
+                        <img src="./products/maybelline-compact.jpg" alt="Estee Lauder Double Wear">
+                        <div class="product-overlay">
+                            <button class="overlay-btn">🔍</button>
+                            <button class="overlay-btn">🛒</button>
+                            <button class="overlay-btn">❤️</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Maybelline Fit Me Compact</h3>
+                        <p>Pressed powder compact</p>
+                        <div class="product-price">₹299</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Lipstick Category -->
+        <div id="cosmetics-lipstick" class="products-section category-section">
+            <div class="products-container">
+                <div class="product-card small">
+                    <div class="product-image">
+                        <img src="./products/lakme-lip-stick.jpg" alt="Estee Lauder Double Wear">
+                        <div class="product-overlay">
+                            <button class="overlay-btn">🔍</button>
+                            <button class="overlay-btn">🛒</button>
+                            <button class="overlay-btn">❤️</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Lakme Enrich Satin</h3>
+                        <p>Lip color with vitamin E</p>
+                        <div class="product-price">₹599</div>
+                    </div>
+                </div>
+
+                <div class="product-card small">
+                    <div class="product-image">
+                        <img src="./products/ysl-lipstick.jpg" alt="Estee Lauder Double Wear">
+                        <div class="product-overlay">
+                            <button class="overlay-btn">🔍</button>
+                            <button class="overlay-btn">🛒</button>
+                            <button class="overlay-btn">❤️</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>YSL Rouge Volupte</h3>
+                        <p>Luxurious moisturizing lipstick</p>
+                        <div class="product-price">₹3,499</div>
+                    </div>
+                </div>
+
+                <div class="product-card small">
+                    <div class="product-image">
+                        <img src="./products/sugar-lip-stick.jpg" alt="Estee Lauder Double Wear">
+                        <div class="product-overlay">
+                            <button class="overlay-btn">🔍</button>
+                            <button class="overlay-btn">🛒</button>
+                            <button class="overlay-btn">❤️</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Sugar Matte Attack</h3>
+                        <p>Transferproof liquid lipstick</p>
+                        <div class="product-price">₹1349</div>
+                    </div>
+                </div>
+
+                <div class="product-card small">
+                    <div class="product-image">
+                        <img src="./products/mac-lipstick.jpg" alt="Estee Lauder Double Wear">
+                        <div class="product-overlay">
+                            <button class="overlay-btn">🔍</button>
+                            <button class="overlay-btn">🛒</button>
+                            <button class="overlay-btn">❤️</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>MAC Lipstick</h3>
+                        <p>Rich, creamy formula</p>
+                        <div class="product-price">₹1,599</div>
+                    </div>
+                </div>
+
+                <div class="product-card small">
+                    <div class="product-image">
+                        <img src="./products/nars-lipstick.jpg" alt="Estee Lauder Double Wear">
+                        <div class="product-overlay">
+                            <button class="overlay-btn">🔍</button>
+                            <button class="overlay-btn">🛒</button>
+                            <button class="overlay-btn">❤️</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>NARS - Explicit Lipstick</h3>
+                        <p>High-end dimensional satin lipstick that delivers long-lasting comfort</p>
+                        <div class="product-price">₹2,899</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mascara Category -->
+        <div id="cosmetics-mascara" class="products-section category-section">
+            <div class="products-container">
+                <div class="product-card small">
+                    <div class="product-image">
+                        <img src="./products/nars-mascara.jpg" alt="Estee Lauder Double Wear">
+                        <div class="product-overlay">
+                            <button class="overlay-btn">🔍</button>
+                            <button class="overlay-btn">🛒</button>
+                            <button class="overlay-btn">❤️</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>NARS - mascara</h3>
+                        <p>Climax Extreme Volumizing mascara</p>
+                        <div class="product-price">₹899</div>
+                    </div>
+                </div>
+
+                <div class="product-card small">
+                    <div class="product-image">
+                        <img src="./products/sugar-mascara.jpg" alt="Estee Lauder Double Wear">
+                        <div class="product-overlay">
+                            <button class="overlay-btn">🔍</button>
+                            <button class="overlay-btn">🛒</button>
+                            <button class="overlay-btn">❤️</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Sugar Mascara</h3>
+                        <p>Double Date Extreme Volume Mascara Duo</p>
+                        <div class="product-price">₹799</div>
+                    </div>
+                </div>
+
+                <div class="product-card small">
+                    <div class="product-image">
+                        <img src="./products/maybelline-mascara.jpg" alt="Estee Lauder Double Wear">
+                        <div class="product-overlay">
+                            <button class="overlay-btn">🔍</button>
+                            <button class="overlay-btn">🛒</button>
+                            <button class="overlay-btn">❤️</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Maybelline Lash Sensational</h3>
+                        <p>Volumizing mascara</p>
+                        <div class="product-price">₹699</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Blush Category -->
+        <div id="cosmetics-blush" class="products-section category-section">
+            <div class="products-container">
+                <div class="product-card small">
+                    <div class="product-image">
+                        <img src="./products/nars-blush.jpg" alt="Estee Lauder Double Wear">
+                        <div class="product-overlay">
+                            <button class="overlay-btn">🔍</button>
+                            <button class="overlay-btn">🛒</button>
+                            <button class="overlay-btn">❤️</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Nars Orgasm Blush</h3>
+                        <p>Iconic peachy pink blush</p>
+                        <div class="product-price">₹2,699</div>
+                    </div>
+                </div>
+
+                <div class="product-card small">
+                    <div class="product-image">
+                        <img src="./products/suagr-blush.jpg" alt="Estee Lauder Double Wear">
+                        <div class="product-overlay">
+                            <button class="overlay-btn">🔍</button>
+                            <button class="overlay-btn">🛒</button>
+                            <button class="overlay-btn">❤️</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Sugar Blush</h3>
+                        <p>Luminoso Blush Stick</p>
+                        <div class="product-price">₹1,299</div>
+                    </div>
+                </div>
+
+                <div class="product-card small">
+                    <div class="product-image">
+                        <img src="./products/mac-powder-blush.jpg" alt="Estee Lauder Double Wear">
+                        <div class="product-overlay">
+                            <button class="overlay-btn">🔍</button>
+                            <button class="overlay-btn">🛒</button>
+                            <button class="overlay-btn">❤️</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>MAC Powder Blush</h3>
+                        <p>Natural-looking cheek color</p>
+                        <div class="product-price">₹1,899</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <div class="footer-logo">
+                        <img src="./Screenshot 2025-07-12 220428.png" alt="Estee Lauder Double Wear">
+                </div>
+                <p>Premium skincare and cosmetics for the modern beauty enthusiast.</p>
+            </div>
+
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="skincare.html">Skincare</a></li>
+                    <li><a href="cosmetics.html">Cosmetics</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>Customer Care</h4>
+                <ul class="footer-links">
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="lookbook.html">Lookbook</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <p>ABC city</p>
+                <p>+91 - 9876543212</p>
+                <p>quillbeauty@gmail.com</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="footer-bottom-content">
+                <p>&copy; Quill Beauty Made with 🤍</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

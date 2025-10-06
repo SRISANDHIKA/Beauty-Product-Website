@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skincare Collection - Quill Beauty</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="./Screenshot 2025-07-12 220428.png" alt="Quill Beauty Logo">
+            </div>
+            
+        
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li class="dropdown">
+                    <span class="nav-link">Shop ▾</span>
+                    <div class="dropdown-content">
+                        <a href="skincare.html">Skincare</a>
+                        <a href="cosmetics.html">Cosmetics</a>
+                    </div>
+                </li>
+                <li><a href="lookbook.html" class="nav-link">Lookbook</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="faq.html" class="nav-link">FAQ</a></li>
+            </ul>
+            
+            <!-- Desktop Icons -->
+            <div class="nav-icons">
+                <span class="nav-icon">🔍</span>
+                <span class="nav-icon">🛒</span>
+                <span class="nav-icon">👤</span>
+            </div>
+            
+            <!-- Mobile Menu Button -->
+            <div class="mobile-menu-btn">☰</div>
+        </div>
+    </nav>
+
+    <!-- SKINCARE PAGE -->
+    <section class="page">
+        <div class="page-header">
+            <h1>Skincare Collection</h1>
+            <p>Nourish your skin with our premium skincare essentials</p>
+        </div>
+
+        <!-- Hidden checkboxes for category switching -->
+        <input type="radio" name="skincare-category" id="skincare-all-toggle" checked>
+        <input type="radio" name="skincare-category" id="skincare-facewash-toggle">
+        <input type="radio" name="skincare-category" id="skincare-moisturizer-toggle">
+        <input type="radio" name="skincare-category" id="skincare-sunscreen-toggle">
+        <input type="radio" name="skincare-category" id="skincare-serum-toggle">
+
+        <div class="category-nav">
+            <div class="category-links">
+                <label for="skincare-all-toggle" class="category-link active">All Products</label>
+                <label for="skincare-facewash-toggle" class="category-link">Face Wash</label>
+                <label for="skincare-moisturizer-toggle" class="category-link">Moisturizer</label>
+                <label for="skincare-sunscreen-toggle" class="category-link">Sunscreen</label>
+                <label for="skincare-serum-toggle" class="category-link">Serum</label>
+            </div>
+        </div>
+
+        <!-- All Skincare Products -->
+        <div id="skincare-all" class="products-section category-section">
+            <div class="products-container">
+                <div class="product-card small">
+                    <div class="product-image">
+                        <img src="./products/multani_mitti_face_wash_1.jpg" alt="Gentle Face Wash">
+                        <div class="product-overlay">
+                            <button class="overlay-btn">🔍</button>
+                            <button class="overlay-btn">🛒</button>
+                            <button class="overlay-btn">❤️</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Gentle Face Wash</h3>
+                        <p>Deep cleansing formula</p>
+                        <div class="product-price">₹449</div>
+                    </div>
+                </div>
+
+                <div class="product-card small">
+                    <div class="product-image">
+                        <img src="./products/skin-correct-face-serum-with-ingredient_1.jpg" alt="Hydrating Moisturizer">
+                        <div class="product-overlay">
+                            <button class="overlay-btn">🔍</button>
+                            <button class="overlay-btn">🛒</button>
+                            <button class="overlay-btn">❤️</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Hydrating Moisturizer</h3>
+                        <p>24-hour hydration</p>
+                        <div class="product-price">₹699</div>
+                    </div>
+                </div>
+
+                <div class="product-card small">
+                    <div class="product-image">
+                        <img src="./products/foxtale-vitaminc-serum.jpg" alt="Vitamin C Serum">
+                        <div class="product-overlay">
+                            <button class="overlay-btn">🔍</button>
+                            <button class="overlay-btn">🛒</button>
+                            <button class="overlay-btn">❤️</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Vitamin C Serum</h3>
+                        <p>Brightening formula</p>
+                        <div class="product-price">₹1,299</div>
+                    </div>
+                </div>
+
+                <div class="product-card small">
+                    <div class="product-image">
+                        <img src="./products/foxtale-spf50.jpg" alt="SPF 30 Sunscreen">
+                        <div class="product-overlay">
+                            <button class="overlay-btn">🔍</button>
+                            <button class="overlay-btn">🛒</button>
+                            <button class="overlay-btn">❤️</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>SPF 30 Sunscreen</h3>
+                        <p>Broad spectrum protection</p>
+                        <div class="product-price">₹799</div>
+                    </div>
+                </div>
+
+                <div class="product-card small">
+                    <div class="product-image">
+                        <img src="./products/hylaronic-acid.jpg" alt="Hyaluronic Acid Serum">
+                        <div class="product-overlay">
+                            <button class="overlay-btn">🔍</button>
+                            <button class="overlay-btn">🛒</button>
+                            <button class="overlay-btn">❤️</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Hyaluronic Acid Serum</h3>
+                        <p>Intense hydration boost</p>
+                        <div class="product-price">₹1,599</div>
+                    </div>
+                </div>
+
+                <div class="product-card small">
+                    <div class="product-image">
+                        <img src="./products/night-cream.jpg" alt="Night Repair Cream">
+                        <div class="product-overlay">
+                            <button class="overlay-btn">🔍</button>
+                            <button class="overlay-btn">🛒</button>
+                            <button class="overlay-btn">❤️</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Night Repair Cream</h3>
+                        <p>Overnight rejuvenation</p>
+                        <div class="product-price">₹999</div>
+                    </div>
+                </div>
+
+                <div class="product-card small">
+                    <div class="product-image">
+                        <img src="./products/exfoliating-scrub.jpg" alt="Exfoliating Scrub">
+                        <div class="product-overlay">
+                            <button class="overlay-btn">🔍</button>
+                            <button class="overlay-btn">🛒</button>
+                            <button class="overlay-btn">❤️</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Exfoliating Scrub</h3>
+                        <p>Gentle weekly exfoliation</p>
+                        <div class="product-price">₹549</div>
+                    </div>
+                </div>
+
+                <div class="product-card small">
+                    <div class="product-image">
+                        <img src="./products/retinol-night-cream.jpg" alt="Retinol Night Serum">
+                        <div class="product-overlay">
+                            <button class="overlay-btn">🔍</button>
+                            <button class="overlay-btn">🛒</button>
+                            <button class="overlay-btn">❤️</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Retinol Night Serum</h3>
+                        <p>Anti-aging formula</p>
+                        <div class="product-price">₹1,899</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Face Wash Category -->
+        <div id="skincare-facewash" class="products-section category-section">
+            <div class="products-container">
+                <div class="product-card small">
+                    <div class="product-image">
+                        <img src="./products/cetaphil-gentle-cleanser.jpg" alt="Cetaphil Gentle Cleanser">
+                        <div class="product-overlay">
+                            <button class="overlay-btn">🔍</button>
+                            <button class="overlay-btn">🛒</button>
+                            <button class="overlay-btn">❤️</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Cetaphil Gentle Cleanser</h3>
+                        <p>For sensitive skin</p>
+                        <div class="product-price">₹399</div>
+                    </div>
+                </div>
+
+                <div class="product-card small">
+                    <div class="product-image">
+                        <img src="./products/foaming-cream.jpg" alt="Neutrogena Deep Clean">
+                        <div class="product-overlay">
+                            <button class="overlay-btn">🔍</button>
+                            <button class="overlay-btn">🛒</button>
+                            <button class="overlay-btn">❤️</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Neutrogena Deep Clean</h3>
+                        <p>Oil-free foaming cleanser</p>
+                        <div class="product-price">₹349</div>
+                    </div>
+                </div>
+
+                <div class="product-card small">
+                    <div class="product-image">
+                        <img src="./products/himalaya-neem-face-wash.jpg" alt="Himalaya Neem Face Wash">
+                        <div class="product-overlay">
+                            <button class="overlay-btn">🔍</button>
+                            <button class="overlay-btn">🛒</button>
+                            <button class="overlay-btn">❤️</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Himalaya Neem Face Wash</h3>
+                        <p>Purifying neem & turmeric</p>
+                        <div class="product-price">₹159</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Moisturizer Category -->
+        <div id="skincare-moisturizer" class="products-section category-section">
+            <div class="products-container">
+                <div class="product-card small">
+                    <div class="product-image">
+                        <img src="./products/nivea-soft-moiturizer.jpg" alt="Nivea Soft Moisturizer">
+                        <div class="product-overlay">
+                            <button class="overlay-btn">🔍</button>
+                            <button class="overlay-btn">🛒</button>
+                            <button class="overlay-btn">❤️</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Nivea Soft Moisturizer</h3>
+                        <p>Light moisturizing cream</p>
+                        <div class="product-price">₹299</div>
+                    </div>
+                </div>
+
+                <div class="product-card small">
+                    <div class="product-image">
+                        <img src="./products/rice-oil-free-face-moisturizer_1.jpg" alt="Rice Water Moisturizer">
+                        <div class="product-overlay">
+                            <button class="overlay-btn">🔍</button>
+                            <button class="overlay-btn">🛒</button>
+                            <button class="overlay-btn">❤️</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Rice Oil-Free Face Moisturizer</h3>
+                        <p>Rice Water & Niacinamide for Glass Skin </p>
+                        <div class="product-price">₹399</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sunscreen Category -->
+        <div id="skincare-sunscreen" class="products-section category-section">
+            <div class="products-container">
+                <div class="product-card small">
+                    <div class="product-image">
+                        <img src="./products/dot-key-VitaminCSunscreenListing1.jpg" alt="Neutrogena Ultra Sheer">
+                        <div class="product-overlay">
+                            <button class="overlay-btn">🔍</button>
+                            <button class="overlay-btn">🛒</button>
+                            <button class="overlay-btn">❤️</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Dot & Key Vitamin C+ Sunscreen</h3>
+                        <p>SPF 50+ PA++++</p>
+                        <div class="product-price">₹599</div>
+                    </div>
+                </div>
+
+                <div class="product-card small">
+                    <div class="product-image">
+                        <img src="./products/lakme-sunscreen-expert.jpg" alt="Lakme Sun Expert">
+                        <div class="product-overlay">
+                            <button class="overlay-btn">🔍</button>
+                            <button class="overlay-btn">🛒</button>
+                            <button class="overlay-btn">❤️</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Lakme Sun Expert</h3>
+                        <p>SPF 30 PA++ sunscreen lotion</p>
+                        <div class="product-price">₹399</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Serum Category -->
+        <div id="skincare-serum" class="products-section category-section">
+            <div class="products-container">
+                <div class="product-card small">
+                    <div class="product-image">
+                        <img src="./products/dot&key-niacinamide.jpg" alt="The Ordinary Niacinamide">
+                        <div class="product-overlay">
+                            <button class="overlay-btn">🔍</button>
+                            <button class="overlay-btn">🛒</button>
+                            <button class="overlay-btn">❤️</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>The Dot & Key Niacinamide</h3>
+                        <p>10% + Zinc 1% serum</p>
+                        <div class="product-price">₹499</div>
+                    </div>
+                </div>
+
+                <div class="product-card small">
+                    <div class="product-image">
+                        <img src="./products/vitamin-c-glow-serum_1_1_1.jpg" alt="Minimalist Vitamin C">
+                        <div class="product-overlay">
+                            <button class="overlay-btn">🔍</button>
+                            <button class="overlay-btn">🛒</button>
+                            <button class="overlay-btn">❤️</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Minimalist Vitamin C</h3>
+                        <p>10% L-Ascorbic Acid serum</p>
+                        <div class="product-price">₹299</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <div class="footer-logo">
+                    <img src="./Screenshot 2025-07-12 220428.png" alt="Quill Beauty Logo">
+                </div>
+                <p>Premium skincare and cosmetics for the modern beauty enthusiast.</p>
+            </div>
+
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="skincare.html">Skincare</a></li>
+                    <li><a href="cosmetics.html">Cosmetics</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>Customer Care</h4>
+                <ul class="footer-links">
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="lookbook.html">Lookbook</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <p>ABC city</p>
+                <p>+91 - 9876543212</p>
+                <p>quillbeauty@gmail.com</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="footer-bottom-content">
+                <p>&copy; Quill Beauty Made with 🤍</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
